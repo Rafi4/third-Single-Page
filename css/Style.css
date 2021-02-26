@@ -1,0 +1,884 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+a {
+    height: 100px;
+    width: 100px;
+}
+
+p {
+    font-family: 'Saira Condensed'
+     
+}
+ 
+/* part one */
+
+main {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/images/hero.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+#date {
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    padding: 25px; 
+    font-weight: 700;
+    font-family: 'Montserrat Alternates', sans-serif;
+    position: fixed;
+}
+
+
+
+.contact, .about, .home {
+    transition: 0.3s linear;
+    position: fixed;
+    top: 20px;
+    right: 32%;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.about {
+    right: 49%;
+}
+
+.home {
+    right: 64%;
+}
+ 
+:hover.contact, :hover.about, :hover.home {
+    color: gray;
+    cursor: pointer;
+    top: 23px;
+}
+
+div.belt {
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 999;
+}
+
+div a {
+   color: white;
+   font-size: 14px;
+   text-decoration: none;
+}
+
+.language {
+    position: absolute;
+    right: 2%;
+    top: 12%;
+}
+
+.language img.ua {
+    height: 40px;
+    right: 100%;
+    top: -10%;
+}
+
+h1.business {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    top: 40%;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 50px; 
+    text-align: center;
+    font-family: 'Saira Condensed'
+}
+
+
+
+
+.flat p {
+    align-self: flex-end;
+    
+    color: wheat;
+}
+
+.flat img {
+    height: 150px;
+}
+
+
+/* part two */
+
+section {
+    position: relative;
+    height: 100vh;
+   
+}
+
+.business2 {
+    color:black;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 50px 0 0 80px;
+}
+
+/* img.women {
+    position: absolute;
+    float: right;
+    height: 500px;
+    margin: 120px 100px;
+    animation: women 20s linear  infinite;
+} */
+
+img.women {
+    position: absolute;
+    height: 500px;
+    top: 20%;
+    right: 10%;
+    animation: women 10s  infinite;
+}
+
+/* img.women2 {
+    position: absolute;
+    float: right;
+    height: 500px;
+    margin: 120px 100px;
+    animation: women2 20s linear  infinite;
+} */
+
+img.women2 {
+    position: absolute;
+    height: 500px;
+    top: 20%;
+    left: 10%;
+    animation: women2 10s  infinite;
+}
+
+
+
+@keyframes women {
+    0% { opacity: 0;
+        transform: translate(5%)
+    }
+
+    20% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+   
+    60% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+
+   }
+
+   @keyframes women2 {
+    0% { opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+   
+    60% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+        
+    }
+
+    85% {
+        opacity: 1;
+        transform: translate(5%)
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+   }
+
+h2 {
+    margin: 0 auto;
+    padding-top: 80px;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Saira Condensed'
+
+}
+
+
+/* part three */
+
+
+aside {
+    position: relative;
+    height: 100%;
+    background-color: black;
+}
+
+div.message {
+    width: 280px;
+    margin: 0 auto;
+    
+}
+
+h3, h3 a {
+    font-size: 24px;
+}
+
+aside h3 , h3 a {
+padding-top: 150px;
+margin: 0 auto;
+text-align: center;
+color: wheat;
+}
+
+
+
+input {
+    height: 30px;
+    width: 340px;
+    font-size: 20px;
+}
+
+label {
+    font-size: 26px;
+    color: wheat;
+}
+
+h4 {
+    
+    font-size: 28px;
+    color: wheat;
+    
+}
+
+button#sendBtn {
+    height: 70px;
+    width: 90px;
+}
+
+form div {
+    padding: 20px 0;
+    width: 0;
+}
+
+div button#sendBtn {
+    bottom: 80px;
+    right: 80px;
+    font-size: 20px;
+    padding: 10px 50px;
+    font-family: roboto condensed, arial, sans-serif;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: wheat;
+    border: 4px solid wheat;
+    transition: .3s;
+    width: 340px;  
+    cursor: pointer;
+}
+
+div button#sendBtn:hover {
+    background-color: white;
+    color: black;
+    border: 4px solid white;
+
+  }
+
+textarea {
+    height: 112px;
+    width: 344px;
+    font-size: 20px;
+}
+
+img.pl {
+    position: absolute;
+    height: 200px;
+    left: 10%;
+    top: 32%;
+}
+
+img.ua {
+    position: absolute;
+    height: 220px;
+    right: 7%;
+    top: 32%;
+}
+
+
+/* footer */
+
+footer {
+    color: white;
+    width: 97,5%;
+    background-color: black;
+    text-align: center;  
+    padding: 20px;
+    font-size: 25px;
+}
+
+
+
+
+
+@media (max-width: 1366px) { 
+    
+    /* part one */
+
+    #date {
+        font-size: 20px;
+        padding: 14px; 
+        top: 2px;
+    }
+
+    .contact {
+        top: 8px;
+        
+    }
+    
+    .about {
+        top: 8px;
+    }
+
+    .home {   
+            top: 8px;
+     }
+
+     :hover.contact, :hover.about, :hover.home {
+        font-size: 27px;
+        top: 3px;
+    }
+
+     h1.business {
+        font-size: 40px;  
+     }
+
+     div.belt {
+        height: 60px;
+    }
+
+    div a {
+        font-size: 12px;
+    }
+    .language img.ua {
+        height: 35px;   
+    }
+
+    /* part two */
+
+.business2 {
+    font-size: 25px;
+    padding: 30px 0 0 50px;
+}
+
+h2 {
+    padding-top: 50px;
+    font-size: 18px;
+
+}
+
+img.women {
+   
+    height: 400px;
+}
+
+
+
+img.women2 {
+   
+    height: 400px;
+    left: 5%;
+}
+
+
+
+/* part three */
+
+
+aside h3, h3 a {
+padding-top: 40px;
+padding-bottom: 20px;
+}
+
+h3, h3 a {
+    font-size: 24px;
+}
+
+img.pl {
+    height: 150px;
+    left: 8%;
+}
+
+img.ua {
+    height: 170px;
+    top: 30%;
+}
+
+/* footer */
+
+footer {  
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* part one */
+
+    #date {
+        font-size: 18px;
+        padding: 14px; 
+        
+    }
+
+    .contact {
+        font-size: 23px;
+        top: 5px;
+        right: 23%;
+    }
+    
+    .about {
+        font-size: 23px;
+        right: 42%;
+        top: 5px;
+    }
+
+    .home {   
+        font-size: 23px;
+        right: 59%;
+        top: 5px;
+     }
+
+     :hover.contact, :hover.about, :hover.home {
+        font-size: 27px;
+        top: 3px;
+    }
+
+     h1.business {
+        font-size: 38px;  
+     }
+
+     div.belt {
+        height: 50px;
+    }
+
+    div a {
+        font-size: 10px;
+    }
+    
+    .language  {
+        top: 15%;
+    }
+
+    .language img.ua {
+        height: 30px;
+    }
+
+     /* part two */
+
+.business2 {
+    font-size: 25px;
+    padding: 30px 0 0 50px;
+}
+
+img.women {
+    
+    height: 350px;
+    top: 20%;
+    right: 5%;
+}
+
+img.women2 {
+    height: 350px;
+    top: 20%;
+    left: 5%;
+}
+
+h2 {
+    padding-top: 40px;
+    font-size: 17px;
+}
+
+h3, h3 a {
+    font-size: 24px;
+}
+
+/* part three */
+
+img.pl {
+    height: 100px;
+    left: 8%;
+    top: 30%;
+}
+
+img.ua {
+    height: 100px;
+    right: 3%;
+    top: 30%;
+}
+
+}
+
+   @media (max-width: 768px) {
+
+    /* part one */
+    img.pl {
+        height: 100px;
+        left: 4%;
+        top: 32%;
+    }
+    
+    img.ua {
+        height: 100px;
+        right: 4%;
+        top: 32%;
+    }
+    footer {  
+        padding: 15px;
+        font-size: 15px;
+    }
+       
+
+/* part two */
+
+.business2 {
+    font-size: 18px;
+    padding: 30px 0 0 50px;
+}
+
+img.women {
+    height: 380px;
+    top: 55%;
+    right: 5%;
+}
+
+img.women2 {
+    height: 380px;
+    top: 55%;
+    left: 5%;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+/* part three */
+
+h3, h3 a {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+
+
+input {
+    height: 28px;
+    width: 300px;
+    font-size: 18px;
+}
+
+textarea {
+    height: 100px;
+    width: 300px;
+    font-size: 20px;
+}
+
+
+button#sendBtn {
+    height: 70px;
+    width: 90px;
+}
+
+form div {
+    padding: 12px 0;
+    width: 0;
+}
+
+div button#sendBtn {
+    bottom: 80px;
+    right: 80px;
+    font-size: 18px;
+    padding: 10px 50px;
+    width: 300px;  
+    
+}
+   }
+
+@media (max-width: 684px) {
+            img.pl, img.ua {
+                display: none;
+                width: 440px;
+            }
+
+        }
+
+        @media (max-width: 598px){
+            div#date {
+                display: none;
+            }
+                main {
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                    url('/images/hero2.jpg'); 
+                }
+
+                img.women {
+                    height: 240px;
+                    top: 65%;
+                    right: 10%;
+                }
+                
+                img.women2 {
+                    height: 240px;
+                    top:  65%;
+                    left: 10%;
+                }
+                
+            }
+
+    
+   @media (max-width: 425px) {
+
+        /* part one  */
+
+        #date {
+            display: none;
+        }
+    
+        .contact {
+            font-size: 25px;
+            top: 5px;
+            right: 15%;
+        }
+        
+        .about {
+            font-size: 25px;
+            right: 45%;
+            top: 5px;
+        }
+    
+        .home {   
+            font-size: 25px;
+            right: 70%;
+            top: 5px;
+         }
+    
+         :hover.contact, :hover.about, :hover.home {
+            font-size: 25px;
+            top: 3px;
+        }
+    
+        h1.business {
+            top: 40%;
+            width: 100%;
+            font-size: 35px; 
+            
+        }
+    
+        main {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url('/images/hero2.jpg'); 
+        }
+
+        div a {
+            font-size: 10px;
+        }
+        
+        .language  {
+            top: 8%;
+        }
+    
+        .language img.ua {
+            display: block;
+            height: 30px;
+            width: 45px;
+        }
+
+        /* two part */
+
+
+
+        .business2 {
+            font-size: 22px;
+            padding: 30px 0 0 50px;
+        }
+        
+        img.women {
+            height: 240px;
+            top: 65%;
+        }
+
+        img.women2 {
+            height: 240px;
+            top: 65%;
+        }
+    
+        
+        h2 {
+            font-size: 12px;
+            width: 260px;
+            margin: 0 auto;
+        }
+
+        /* part three */
+
+        h3, h3 a {
+            font-size: 18px;
+        }
+    } 
+
+
+        @media (max-width: 320px) {
+        img.women {
+            height: 140px;
+            top: 75%;
+        }
+
+        img.women2 {
+            height: 140px;
+            top: 75%
+        }
+
+        h3, h3 a {
+            width: 280px;
+            font-size: 14px;
+        }
+        input {
+            height: 30px;
+            width: 280px;
+            font-size: 20px;
+        }
+
+        textarea {
+            height: 100px;
+            width: 280px;
+            font-size: 20px;
+        }
+        div button {
+            width: 280px;
+        }
+          
+        
+        .language  {
+            top: 7%;
+        }
+    
+        .language img.ua {
+           
+            height: 20px;
+            width: 35px;
+        }
+         h3, h3 a  {
+            font-size: 13px;
+        }
+        
+        .language  {
+            top: 10%;
+        }
+    
+    }
+
+    @media (max-width: 320px) and (max-width: 480px)
+    {
+        h1.business2 {
+            padding: 10px 0 0 10px;
+            font-size: 18px;
+        }
+
+        h3, h3 a  {
+            font-size: 13px;
+        }
+        
+        .language  {
+            top: 12%;
+        }
+    }
+
+
+ /* media landsxape */
+
+    @media (orientation: landscape) and (max-width: 568px) {
+        img.women {
+            display: none;
+        }
+
+        img.women2 {
+           display: none;
+        }
+        h1.business2 {
+            padding: 10px 0 0 10px;
+            font-size: 18px;
+        }
+
+        h2 {
+            padding-top: 10px;
+            font-size: 11px;
+        }
+    }
+    
+    @media (orientation: landscape) and (max-width: 823px) {
+        h1 {
+            padding: 10px 0 0 10px;
+            font-size: 18px;
+        }
+
+        h2 {
+            padding-top: 10px;
+            font-size: 12px;
+        }
+
+        img.women {
+            height: 200px;
+            top: 50%;
+        }
+
+        img.women2 {
+            height: 200px;
+            top: 50%
+        }
+
+    }
+
+    .skryptcookies {
+        background-color: black;
+    }
+
+
+    .skryptcookies-pl {
+        bottom: 0;
+        color: black;
+        opacity: 1;
+    }
+
+    .skryptcookies-pl-tlo {
+        background-color: rgb(0, 0, 0);
+        opacity: 1;
+    }
+
+ /* ver. 1.2 */
